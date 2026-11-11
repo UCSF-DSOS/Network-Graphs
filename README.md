@@ -1,0 +1,133 @@
+# Network Analysis with Python
+
+This workshop introduces network analysis with Python and NetworkX. We focus on representing relationships as networks, constructing graphs from data, visualizing network structure, and exploring connections between nodes.
+
+Networks provide a useful way to represent many kinds of relational data. Researchers can be connected through shared publications, inventors through patents, organizations through collaborations, and documents through citations. In each case, entities can be represented as **nodes** and relationships between those entities as **edges**.
+
+The workshop begins by constructing a small network manually so that the basic components of a graph are visible. We then build a research collaboration network from tabular data and use NetworkX to explore degree, connectivity, shortest paths, alternative paths, and attributes associated with relationships.
+
+The examples use small fictional datasets so that the network structure remains easy to inspect. The same methods can later be applied to larger datasets retrieved from APIs, databases, and other sources.
+
+## Table of Contents
+
+- [Objectives](#objectives)
+- [Prerequisites](#prerequisites)
+- [NetworkX](#networkx)
+- [Workbooks](#workbooks)
+  - [NetworkX Introduction](#networkx-introduction)
+  - [Building a Collaboration Network from Data](#building-a-collaboration-network-from-data)
+- [Relationship to the Workshop Series](#relationship-to-the-workshop-series)
+- [Additional Resources](#additional-resources)
+
+## Objectives
+
+By the end of this workshop, participants will be able to:
+
+- Explain the difference between nodes and edges
+- Create an undirected graph with NetworkX
+- Add nodes, edges, and attributes to a graph
+- Build a graph from tabular relationship data
+- Visualize a network with NetworkX and Matplotlib
+- Use degree to examine direct connections
+- Find paths between nodes
+- Use attributes to add information about nodes and relationships
+- Understand how the same graph model can be applied to different kinds of relational data
+
+## Prerequisites
+
+Some previous experience with Python is helpful but extensive programming experience is not required.
+
+The workshop uses Jupyter notebooks running Python. The second workbook also uses pandas to represent a small table of collaboration data.
+
+Participants who want to run the examples will need:
+
+- Python
+- Jupyter Notebook or JupyterLab
+- NetworkX
+- pandas
+- Matplotlib
+
+No previous experience with graph theory, network analysis, or NetworkX is required.
+
+## NetworkX
+
+[NetworkX](https://networkx.org/) is a Python package for creating, manipulating, and studying networks.
+
+A simple NetworkX graph can be created with:
+
+    import networkx as nx
+
+    G = nx.Graph()
+
+Nodes can then be added to represent entities:
+
+    G.add_node("Jane")
+    G.add_node("John")
+
+An edge can represent a relationship between those entities:
+
+    G.add_edge("Jane", "John")
+
+Additional information can be stored as attributes associated with nodes or edges.
+
+The workbooks build on this basic model step by step before using structured data to construct a larger network automatically.
+
+## Workbooks
+
+### NetworkX Introduction
+
+#### [NetworkX-Introduction.ipynb](NetworkX-Introduction.ipynb)
+
+This workbook introduces network graphs by constructing a small research collaboration network from first principles.
+
+Participants create an empty graph, add fictional researchers as nodes, store information about researchers as node attributes, and add collaboration relationships as edges.
+
+The completed graph is visualized with NetworkX and Matplotlib. The example also introduces neighbors, node degree, and graph connectivity.
+
+The emphasis is on making the structure of the graph visible before automating graph construction from data.
+
+### Building a Collaboration Network from Data
+
+#### [NetworkX-Collaboration-From-Data.ipynb](NetworkX-Collaboration-From-Data.ipynb)
+
+This workbook moves from manually constructing a graph to building one from structured data.
+
+A small pandas DataFrame represents fictional research collaborations. Each row describes a relationship between two researchers, and the notebook uses those rows to construct the network automatically. Collaboration topics are stored as edge attributes.
+
+The workbook then uses the network to explore questions such as:
+
+- Which researchers have the most direct collaborators?
+- What is a shortest path between two researchers?
+- What alternative paths connect two researchers?
+- What collaboration topics occur along a path?
+
+The underlying graph model is the same as in the first workbook. The difference is that the nodes, edges, and attributes are now constructed from data.
+
+## Relationship to the Workshop Series
+
+This workshop is part of a broader UCSF Library curriculum on computational data and document analysis with Python, SQL, machine learning, and AI.
+
+Network analysis provides another way to work with structured data by focusing on relationships rather than individual observations.
+
+The [Research and Patent Landscape Informatics](https://github.com/UCSF-DSOS/Research-Patent-Landscape-Workshop) workshop series applies the methods introduced here to live research and patent data.
+
+In those examples:
+
+- OpenAlex publication data is used to construct researcher collaboration networks based on coauthorship
+- USPTO patent application data is used to construct inventor collaboration networks based on co-inventorship
+
+The data source changes, but the basic network model remains the same:
+
+    entities → nodes
+    relationships → edges
+    metadata → attributes
+
+Separating the general network methods from the data-access examples makes it possible to apply the same techniques to many other kinds of relational data, including citations, organizations, technologies, documents, and other forms of collaboration.
+
+## Additional Resources
+
+- [NetworkX](https://networkx.org/)
+- [NetworkX Documentation](https://networkx.org/documentation/stable/)
+- [NetworkX Tutorial](https://networkx.org/documentation/stable/tutorial.html)
+- [Matplotlib](https://matplotlib.org/)
+- [pandas](https://pandas.pydata.org/)
