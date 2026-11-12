@@ -8,8 +8,6 @@ The workshop begins by constructing a small network manually so that the basic c
 
 The examples use small fictional datasets so that the network structure remains easy to inspect. The same methods can later be applied to larger datasets retrieved from APIs, databases, and other sources.
 
-For this workshop, we will use test data to build and explore NetworkX for analyzing graphs, including shortest path and alternative paths between nodes to explore relationships. For examples of graphs built from research, patent, and grant databases, see the [Network Project Notebooks](https://github.com/geoffswc/Research-Patent-Landscape-Informatics#network-project-workbooks) from the [Research Patent Landscape Analytics](https://github.com/geoffswc/Research-Patent-Landscape-Informatics) workshop. 
-
 ## Table of Contents
 
 - [Objectives](#objectives)
@@ -93,13 +91,7 @@ In those examples:
 - OpenAlex publication data is used to construct researcher collaboration networks based on coauthorship
 - USPTO patent application data is used to construct inventor collaboration networks based on co-inventorship
 
-The data source changes, but the basic network model remains the same:
-
-    entities → nodes
-    relationships → edges
-    metadata → attributes
-
-Separating the general network methods from the data-access examples makes it possible to apply the same techniques to many other kinds of relational data, including citations, organizations, technologies, documents, and other forms of collaboration.
+For this workshop, we will use test data to build and explore NetworkX for analyzing graphs, including shortest path and alternative paths between nodes to explore relationships. 
 
 ## Additional Resources
 
