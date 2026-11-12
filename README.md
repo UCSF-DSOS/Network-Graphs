@@ -55,7 +55,7 @@ Geoffrey Boushey is a computational and research data science specialist at UCSF
 
 ### NetworkX Introduction
 
-#### [NetworkX-Introduction.ipynb](NetworkX-Introduction.ipynb)
+#### [NetworkX-Introduction.ipynb](https://github.com/UCSF-DSOS/Network-Graphs/blob/main/NetworkX-Introduction.ipynb)
 
 This workbook introduces network graphs by constructing a small research collaboration network from first principles.
 
@@ -67,7 +67,7 @@ The emphasis is on making the structure of the graph visible before automating g
 
 ### Building a Collaboration Network from Data
 
-#### [NetworkX-Collaboration-From-Data.ipynb](NetworkX-Collaboration-From-Data.ipynb)
+#### [NetworkX-Collaboration-From-Data.ipynb](https://github.com/UCSF-DSOS/Network-Graphs/blob/main/NetworkX-Collaboration-From-Data.ipynb)
 
 This workbook moves from manually constructing a graph to building one from structured data.
 
