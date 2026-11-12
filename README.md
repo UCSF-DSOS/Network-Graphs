@@ -47,6 +47,10 @@ Participants who want to run the examples will need:
 
 No previous experience with graph theory, network analysis, or NetworkX is required.
 
+## Instructor
+
+Geoffrey Boushey is a computational and research data science specialist at UCSF and a member of the Library's Data Science and Open Scholarship team. Geoff teaches courses and provides consultations on foundational programming, data analysis, and AI techniques including Python, SQL, Unix, and Version Control.
+
 ## Workbooks
 
 ### NetworkX Introduction
