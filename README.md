@@ -30,10 +30,8 @@ By the end of this workshop, participants will be able to:
 - Add nodes, edges, and attributes to a graph
 - Build a graph from tabular relationship data
 - Visualize a network with NetworkX and Matplotlib
-- Use degree to examine direct connections
 - Find paths between nodes
 - Use attributes to add information about nodes and relationships
-- Understand how the same graph model can be applied to different kinds of relational data
 
 ## Prerequisites
 
@@ -50,29 +48,6 @@ Participants who want to run the examples will need:
 - Matplotlib
 
 No previous experience with graph theory, network analysis, or NetworkX is required.
-
-## NetworkX
-
-[NetworkX](https://networkx.org/) is a Python package for creating, manipulating, and studying networks.
-
-A simple NetworkX graph can be created with:
-
-    import networkx as nx
-
-    G = nx.Graph()
-
-Nodes can then be added to represent entities:
-
-    G.add_node("Jane")
-    G.add_node("John")
-
-An edge can represent a relationship between those entities:
-
-    G.add_edge("Jane", "John")
-
-Additional information can be stored as attributes associated with nodes or edges.
-
-The workbooks build on this basic model step by step before using structured data to construct a larger network automatically.
 
 ## Workbooks
 
@@ -129,7 +104,5 @@ Separating the general network methods from the data-access examples makes it po
 ## Additional Resources
 
 - [NetworkX](https://networkx.org/)
-- [NetworkX Documentation](https://networkx.org/documentation/stable/)
-- [NetworkX Tutorial](https://networkx.org/documentation/stable/tutorial.html)
 - [Matplotlib](https://matplotlib.org/)
 - [pandas](https://pandas.pydata.org/)
