@@ -2,11 +2,13 @@
 
 This workshop introduces network analysis with Python and NetworkX. We focus on representing relationships as networks, constructing graphs from data, visualizing network structure, and exploring connections between nodes.
 
-Networks provide a useful way to represent many kinds of relational data. Researchers can be connected through shared publications, inventors through patents, organizations through collaborations, and documents through citations. In each case, entities can be represented as **nodes** and relationships between those entities as **edges**.
+Networks provide a useful way to represent relationships between researchers and organizations through publications, patents, collaborations, and citations. In each case, entities can be represented as **nodes** and relationships between those entities as **edges**.
 
 The workshop begins by constructing a small network manually so that the basic components of a graph are visible. We then build a research collaboration network from tabular data and use NetworkX to explore degree, connectivity, shortest paths, alternative paths, and attributes associated with relationships.
 
 The examples use small fictional datasets so that the network structure remains easy to inspect. The same methods can later be applied to larger datasets retrieved from APIs, databases, and other sources.
+
+For this workshop, we will use test data to build and explore NetworkX for analyzing graphs, including shortest path and alternative paths between nodes to explore relationships. For examples of graphs built from research, patent, and grant databases, see the [Network Project Notebooks](https://github.com/geoffswc/Research-Patent-Landscape-Informatics#network-project-workbooks) from the [Research Patent Landscape Analytics](https://github.com/geoffswc/Research-Patent-Landscape-Informatics) workshop. 
 
 ## Table of Contents
 
